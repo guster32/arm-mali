@@ -1,12 +1,9 @@
 prefix=/usr
-exec_prefix=${prefix}
 libdir=${prefix}/lib
 includedir=${prefix}/include
 
-Name: glesv2
-Description: Mali OpenGL ES 2.0
-Requires.private:
-Version: r4p0
+Name: GLESv2
+Description: OpenGL ES v2/v3 library and headers.
+Version: 3.2
 Libs: -L${libdir} -lGLESv2
-Libs.private: -lm -lpthread -ldl
 Cflags: -I${includedir}
